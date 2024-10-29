@@ -1,1 +1,205 @@
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4; /* Light Gray */
+    color: #333333; /* Dark Gray */
+}
+
+header {
+    background-color: #001F3F; /* Navy Blue */
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the navbar */
+}
+.logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Flexbox for horizontal layout */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adjust spacing */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #FF6F61; /* Coral */
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cta-button {
+    background-color: #FF6F61; /* Coral */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.cta-button:hover {
+    background-color: #FF8A65; /* Lighter Coral */
+}
+
+.features {
+    background-color: #F7F9FC; /* Light background for contrast */
+    padding: 40px 20px; /* Padding for top and bottom */
+    text-align: center; /* Center the text */
+}
+
+.features h2 {
+    color: #001F3F; /* Dark blue for headings */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-between; /* Space out the features evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.feature-item {
+    background-color: white; /* White background for feature boxes */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside feature boxes */
+    margin: 10px; /* Margin between boxes */
+    flex: 1 1 22%; /* Flex basis for responsiveness */
+    transition: transform 0.3s; /* Animation effect on hover */
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.feature-item h3 {
+    color: #001F3F; /* Dark blue for headings */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.feature-item p {
+    color: #555; /* Grey text for paragraphs */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .feature-item {
+        flex: 1 1 45%; /* Adjust flex basis for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-item {
+        flex: 1 1 100%; /* Stack features on very small screens */
+    }
+}
+
+
+#features {
+    background-color: #F7F9FC; /* Light background for contrast */
+    padding: 40px 20px; /* Padding for top and bottom */
+    text-align: center; /* Center the text */
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-around; /* Space out the features evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 20px; /* Margin above the feature boxes */
+}
+
+.feature {
+    background-color: white; /* White background for feature boxes */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside feature boxes */
+    margin: 10px; /* Margin between boxes */
+    flex: 1 1 20%; /* Flex basis for responsiveness */
+}
+
+.feature h3 {
+    color: #001F3F; /* Dark blue for headings */
+}
+
+.feature p {
+    color: #555; /* Grey text for paragraphs */
+}
+
+
+footer {
+    background-color: #001F3F; /* Navy Blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* More padding for a better look */
+    position: relative; /* Ensure proper placement */
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-links li {
+    display: inline; /* Display links inline */
+    margin: 0 15px; /* Space between links */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-links a:hover {
+    color: #FF6F61; /* Coral color on hover */
+}
+
+.footer-text {
+    margin-top: 10px; /* Spacing above copyright */
+    font-size: 0.9em; /* Slightly smaller font */
+}
 
