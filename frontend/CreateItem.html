@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Influencer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Influencer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="DataDisplay.html">Find Influencers</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Register.html">Register</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="add-influencer-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="category">Category:</label>
+            <input type="text" id="category" required>
+            <button type="submit">Add Influencer</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Influencer Finder</p>
+    </footer>
+    <script>
+        document.getElementById('add-influencer-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const category = document.getElementById('category').value;
+            
+            fetch('http://localhost:3000/influencers', { // Adjust URL as necessary
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, category })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Influencer added successfully!');
+                window.location.href = 'DataDisplay.html';
+            })
+            .catch(error => console.error('Error adding influencer:', error));
+        });
+    </script>
+</body>
+</html>
